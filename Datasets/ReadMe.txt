@@ -1,0 +1,2 @@
+This folder contains 4 files. Each contains a dataset (Human Written Vs AI-generated) for different word length groups in the form of CSV. The first column of CSV contains the text and the second holds its respective class. The class column contains a binary value. Here, 0 denotes human-written and 1 AI-generated text.
+https://github.com/aakash-dl/HWAI
