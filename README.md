@@ -25,3 +25,26 @@ The first column of CSV contains the text and the second holds its respective cl
 Here, `0 denotes human-written` and `1 AI-generated text`.
 
 Source of the data is [Github](https://github.com/aakash-dl/HWAI)
+
+# Results
+ - The baseline model was the Naive bayes which had an accuracy of about 88% at first.
+ - After removing the stopwords, the model slightly improved to 89%.
+ - Stemming and lemmatization resulted in lower performance with accuracy dropping to 86%
+ - So finally the effective preprocessing steps include; 
+    1. Removing stopwords and punctuation
+    2. Adding POS tags
+
+ Other models:
+ | Model              | Accuracy   | Recall     | Precision  |
+|--------------------|------------|------------|------------|
+| Logistic Regression| 0.9652     | 0.9560     | 0.9740     |
+| Random Forest      | 0.9533     | 0.9523     | 0.9545     |
+| XGBoost            | 0.9570     | 0.9490     | 0.9647     |
+| `Keras  `          | `0.9793  ` | `0.9738  ` | `0.9848`   |
+
+The keras model(Logistic regression as a neural network) was the final model with the highest performance.
+
+
+
+# Deployment
+This [Web-app](https://github.com/ericks-on/AiDetect) Provides prompt to enter text then detect if its Ai-generated or not.
